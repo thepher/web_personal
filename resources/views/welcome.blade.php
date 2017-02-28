@@ -48,8 +48,20 @@
             .title {
                 font-size: 84px;
             }
-
+/*
             .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+*/
+
+            .links {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
@@ -63,6 +75,24 @@
                 margin-bottom: 30px;
             }
         </style>
+        
+        <!-- Piwik -->
+		<script type="text/javascript">
+		  var _paq = _paq || [];
+		  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+		    var u="//fernandobg.esy.es/piwik/";
+		    _paq.push(['setTrackerUrl', u+'piwik.php']);
+		    _paq.push(['setSiteId', '1']);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<!-- End Piwik Code -->
+
+        
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -82,14 +112,18 @@
                     <p>Fernando Barragán Gómez</p>
                     <p>(Próximamente)</p> 
                 </div>
-
+				
                 <div class="links">
+                	<p>{{$frasecita}}</p> 
+                	<!--
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                   -->
                 </div>
+              
             </div>
         </div>
     </body>
